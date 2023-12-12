@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+    </header>
+    <main>
+        <form action="views/index2.html">
+            <fieldset>
+                <legend>Indentité</legend>
+                <label for="username">nom d'utilisateur *</label>
+                <input type="text" id="username" placeholder="nom d'utilisateur" required>
+                <br>
+                <label for="password">mot de passe *</label>
+                <input type="password" id="password" placeholder="saisir votre mot de passe" required>
+                <br>
+                <label for="email">email *</label>
+                <input type="email" id="email" placeholder="adresse@email.com" required>
+                <br>
+                <label for="ville">ville :</label>
+                <select name="country" id="ville">
+                    <option selected>Selectionnez votre ville</option>
+                    <option value="bam">bamako</option>
+                </select>
+                <br>
+                <label for="adresse">Code Postal :</label>
+                <input type="text" id="adresse">
+                <br>
+                <label for="Photo">Photo</label>
+                <input type="file" id="Photo">
+            </fieldset>
+
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="destination">Quelle destination Choisisez vous ?</label>
+                <br>
+                <input type="checkbox" id="chine">
+                <label for="chine">chine</label>
+                <input type="checkbox" id="australie">
+                <label for="australie">australie</label>
+                <input type="checkbox" id="mars">
+                <label for="mars">mars</label>
+                <br>
+                <label for="comment">Commentaire</label>
+                <textarea name="commentaire" id="comment" cols="80" rows="10"></textarea>
+            </fieldset>
+            <input type="checkbox" id="condi">
+            <label for="condi">j'accepte les conditions d'utilisation du site *</label>
+            <input type="button" name="inscription" value="crée son compte">
+            <input type="reset" name="Recommencer" value="Recommencer">
+        </form>
+    </main>
+    <footer>
+    </footer>
+
+    <script src="assets/js/apps.js"></script>
+    <script src="https://kit.fontawesome.com/9770d1f1b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
